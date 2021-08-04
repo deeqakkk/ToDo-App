@@ -21,7 +21,7 @@
 
 <body>
     <div class="box" id="heading">
-        <h1><%=dayName%> </h1>
+        <h1><%=listTitle%> </h1>
     </div>
     <div class="box">
         <% for(var i=0;i<newListItems.length;i++){%>
@@ -33,7 +33,7 @@
         <%}%>
         <form class="item" action="/" method="POST">
         <input  type="text" placeholder="Add a Task" name="newItem" autocomplete="off">
-        <button name="button" type="sumbit" id="button-addon2">+</button>
+        <button name="list" value=<%=listTitle%> type="sumbit" id="button-addon2">+</button>
         </form>            
     </div>
     
