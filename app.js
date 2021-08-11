@@ -12,7 +12,7 @@ app.use(express.static("public"));
 app.use(express.json());
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb+srv://deeqakkk:deepak123@cluster0.p9dze.mongodb.net/todoListDB', {
+mongoose.connect('mongodb+srv://deeqakkk:password@cluster0.p9dze.mongodb.net/todoListDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
