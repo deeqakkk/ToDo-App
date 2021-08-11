@@ -12,7 +12,7 @@ app.use(express.static("public"));
 app.use(express.json());
 app.set('view engine', 'ejs');
 
-mongoose.connect('mongodb://localhost:27017/todoListDB', {
+mongoose.connect('mongodb+srv://deeqakkk:deepak123@cluster0.p9dze.mongodb.net/todoListDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
@@ -23,7 +23,7 @@ const itemSchema = new mongoose.Schema({
 // SCHEMA MODEL
 const Item = mongoose.model("Item", itemSchema);
 const item1 = new Item({
-    todoTask: "GithubMe:@deeqakkk"
+    todoTask: "Github Me:@deeqakkk"
 });
 const item2 = new Item({
     todoTask: "Hit '+' to add a new task"
